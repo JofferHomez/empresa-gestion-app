@@ -1,0 +1,24 @@
+{
+  "name": "empresa-gestion-app-frontend",
+  "version": "1.0.0",
+  "description": "Frontend de Gestión de Empresas con Vue.js y Quasar",
+  "type": "module",
+  "scripts": {
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "preview": "quasar preview",
+    "lint": "eslint --ext .js,.vue src"
+  },
+  "dependencies": {
+    "vue": "^3.3.4",
+    "quasar": "^2.12.0",
+    "axios": "^1.5.0",
+    "pinia": "^2.1.5",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@quasar/app": "^3.4.0",
+    "eslint": "^8.50.0",
+    "eslint-plugin-vue": "^9.17.0"
+  }
+}

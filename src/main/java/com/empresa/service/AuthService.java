@@ -5,6 +5,7 @@ import com.empresa.dto.RegistroDTO;
 import com.empresa.dto.JwtResponseDTO;
 import com.empresa.entity.Usuario;
 import com.empresa.repository.UsuarioRepository;
+import com.empresa.security.JwtProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

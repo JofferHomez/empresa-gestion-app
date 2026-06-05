@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: empresa-gestion-app
+  datasource:
+    url: jdbc:postgresql://localhost:5432/empresa_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: tu-email@gmail.com
+    password: tu-contraseña-app
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+jwt:
+  secret: your-secret-key-change-this-in-production-environment
+  expiration: 86400000
+
+logging:
+  level:
+    root: INFO
+    com.empresa: DEBUG
